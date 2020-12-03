@@ -179,9 +179,6 @@ device=/sys/devices/platform/soc
 
 echo N > /sys/module/lpm_levels/parameters/sleep_disabled
 
-# Setup readahead
-find /sys/devices -name read_ahead_kb | while read node; do echo 128 > $node; done
-
 # Remove unused swapfile
 rm -rf /data/vendor/swap
 sync
