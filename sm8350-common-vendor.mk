@@ -962,6 +962,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
     vendor.qti.hardware.servicetracker@1.2-impl \
     vendor.qti.hardware.soter@1.0-impl \
+    capi_v2_dap_cpdp \
     lib-imscommon \
     lib-imsdpl \
     lib-imsqimf \
