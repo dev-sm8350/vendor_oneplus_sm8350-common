@@ -18157,6 +18157,15 @@ prebuilt_etc_xml {
     device_specific: true,
 }
 
+prebuilt_etc_xml {
+	name: "manifest_touch_aidl.xml",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_touch_aidl.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
 cc_prebuilt_binary {
     name: "adpl",
     owner: "oneplus",
@@ -20615,6 +20624,59 @@ cc_prebuilt_binary {
     },
     prefer: true,
     device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.oplus.hardware.touch-V2-ndk_odm",
+	stem: "vendor.oplus.hardware.touch-V2-ndk",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.touch-V2-ndk.so"],
+			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "vendor-oplus-hardware-touch-V2-service",
+	owner: "oneplus",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/bin/hw/vendor-oplus-hardware-touch-V2-service"],
+			shared_libs: ["vendor.oplus.hardware.touch-V2-ndk_odm", "libbase", "libcutils", "libdumpstateutil", "liblog", "libbinder_ndk", "libutils", "libhardware", "libbinder", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	device_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "touchDaemon",
+	owner: "oneplus",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/bin/touchDaemon"],
+			shared_libs: ["vendor.oplus.hardware.touch-V2-ndk_odm", "libcutils", "liblog", "libbase", "libbinder", "libcrypto", "libhwbinder", "libutils", "libbinder_ndk", "libtinyxml2", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	device_specific: true,
 }
 
 install_symlink {
