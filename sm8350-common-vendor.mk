@@ -1300,7 +1300,6 @@ PRODUCT_PACKAGES += \
     libcommcenterutils \
     libdmtp-protos-lite \
     libdmtpclient \
-    liboemcrypto \
     liboplus_service \
     libpwirisIoctlWrapper \
     libpwirisPCS \
