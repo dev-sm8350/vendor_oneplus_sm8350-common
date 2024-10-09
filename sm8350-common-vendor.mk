@@ -1082,6 +1082,9 @@ PRODUCT_PACKAGES += \
     libsdmutils \
     libsensorcal \
     libsensorslog \
+    libStDrvInt \
+    libsecureui \
+    libsecureui_svcsock \
     libskewknob \
     libslimclient \
     libsnapdragoncolor-manager \
