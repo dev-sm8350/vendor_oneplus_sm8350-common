@@ -782,6 +782,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib64/camera.device@3.6-external-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.6-external-impl.so
 
 PRODUCT_PACKAGES += \
+    android.hardware.audio.sounddose-vendor-impl \
     btaudio_offload_if \
     eglSubDriverAndroid \
     libEGL_adreno \

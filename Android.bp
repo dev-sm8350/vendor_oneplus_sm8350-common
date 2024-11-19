@@ -20476,6 +20476,23 @@ cc_prebuilt_binary {
     device_specific: true,
 }
 
+cc_prebuilt_library_shared {
+	name: "android.hardware.audio.sounddose-vendor-impl",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/android.hardware.audio.sounddose-vendor-impl.so"],
+			shared_libs: ["android.hardware.audio.sounddose-V2-ndk", "android.hardware.audio.core.sounddose-V2-ndk", "android.media.audio.common.types-V3-ndk", "libbase", "libbinder_ndk", "liblog", "libutils", "audio_tunnel_aoc", "libaudio_aidl_conversion_common_ndk", "libutils_binder", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
 install_symlink {
     name: "system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so",
     system_ext_specific: true,
