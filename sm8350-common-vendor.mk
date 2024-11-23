@@ -1297,6 +1297,7 @@ PRODUCT_PACKAGES += \
     libdmtp-protos-lite \
     libdmtpclient \
     liboplus-uah-client \
+    vendor.oplus.hardware.urcc-V1-ndk_platform \
     liboplus_service \
     libpwirisIoctlWrapper \
     libpwirisPCS \
