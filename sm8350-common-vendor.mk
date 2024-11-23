@@ -1286,6 +1286,7 @@ PRODUCT_PACKAGES += \
     libcommcenterutils \
     libdmtp-protos-lite \
     libdmtpclient \
+    liboplus-uah-client \
     liboplus_service \
     libpwirisIoctlWrapper \
     libpwirisPCS \
