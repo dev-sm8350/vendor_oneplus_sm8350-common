@@ -20608,6 +20608,30 @@ cc_prebuilt_binary {
     device_specific: true,
 }
 
+cc_prebuilt_library_shared {
+	name: "liboplus-uah-client",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/liboplus-uah-client.so"
+            ],
+            shared_libs: [
+                "vendor.oplus.hardware.urcc-V1-ndk_platform",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libbinder_ndk",
+            ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
 install_symlink {
     name: "system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so",
     system_ext_specific: true,
