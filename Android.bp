@@ -15015,6 +15015,15 @@ prebuilt_rfsa {
 	soc_specific: true,
 }
 
+prebuilt_rfsa {
+	name: "Elevoc_vocplus_capi2",
+	filename: "capi_v2_dap_cpdp.so",
+	owner: "oneplus",
+	src: "proprietary/vendor/lib/rfsa/adsp/Elevoc_vocplus_capi2.so",
+	relative_install_path: "adsp",
+	soc_specific: true,
+}
+
 cc_prebuilt_library_shared {
     name: "libmmosal",
     owner: "oneplus",

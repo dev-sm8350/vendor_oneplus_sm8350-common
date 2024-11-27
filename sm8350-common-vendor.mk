@@ -963,6 +963,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2-impl \
     vendor.qti.hardware.soter@1.0-impl \
     capi_v2_dap_cpdp \
+    Elevoc_vocplus_capi2 \
     lib-imscommon \
     lib-imsdpl \
     lib-imsqimf \
