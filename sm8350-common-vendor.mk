@@ -1288,6 +1288,7 @@ PRODUCT_PACKAGES += \
     CneApp \
     IWlanService \
     TimeService \
+    PowerOffAlarm \
     HotwordEnrollmentOKGoogle \
     HotwordEnrollmentXGoogle \
     ImsRcsService \
@@ -1302,6 +1303,7 @@ PRODUCT_PACKAGES += \
     dpmapi \
     oplus-ims-ext \
     qcrilhook \
+    vendor.qti.hardware.alarm-V1.0-java \
     vendor.qti.ims.factory-V2.0-java \
     vendor.qti.ims.connection-V1.0-java \
     vendor.qti.hardware.sensorscalibrate-V1.0-java \
